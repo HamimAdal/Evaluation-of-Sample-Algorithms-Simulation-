@@ -1,6 +1,11 @@
 
 # Evaluation of Sample Algorithms in Unity Game Engine.
 
+**Getting Started**
+Simulation Software- Unity Game Engine
+Programming- C#, Python
+Libraries- pandas, matplotlib, numpy
+
 Solving equations to fulfill requests in terms of the  <i><a href="https://github.com/HamimAdal/Spatial-Characteristics"> Spatial Characteristics</a></i> model in smart space may be computationally expensive but it should be possible to do so if one has a precise model of the impact of the devices on the space, i.e., one has an accurate model of the physics for each device and access to the geometry of the space. We do not rule out the possibility that in the future powerful servers may be associated with each space and available to deliver instantaneous results via standard user interfaces, but this is not the reality of today. For now, IoT devices do not come with associated physics models and there are no dedicated spatial modeling servers in every home and every office. Realistic solutions need to be nimble and opportunistic, readily adapted to the specific set of devices encountered in a given space, and rely on the limited knowledge the space provides. 
 
 One reasonable approach is to assume that the space incorporates sensors and not only actuators.  Sensors are relatively inexpensive and already in use across many applications.  A complementary approach is to rely to some extent on user feedback.  After all, the overall intent is to satisfy the user's needs.  Finally, it makes sense for the space to learn from prior interactions with the user and gradually become more responsive, i.e., able to make accurate decisions faster and without imposing on the user.
