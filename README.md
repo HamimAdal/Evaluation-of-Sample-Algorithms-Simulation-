@@ -6,12 +6,12 @@ In this section, we seek to develop an understanding of how user feedback, avail
 
 | Context                            | Case              | Available Resources            |
 |------------------------------------|-------------------|--------------------------------|
-| History data is not available      | 1. Feedback       |                                |
-|                                    | 2. Sensor         |                                |
-|                                    | 3. Feedback + Sensor |                              |
-| History data is available          | 1. Feedback + History |                            |
-|                                    | 2. Sensor + History   |                            |
-|                                    | 3. Feedback + Sensor + History |                    |
+| History data is not available      | 1.| Feedback                                       |
+|                                    | 2.| Sensor                                         |
+|                                    | 3.| Feedback + Sensor                               |
+| History data is available          | 1.| Feedback + History                             |
+|                                    | 2.| Sensor + History                               |
+|                                    | 3.| Feedback + Sensor + History                     |
 
 
 
