@@ -43,6 +43,23 @@ Before we go into the details of the algorithms, it is important to identify and
 To evaluate the algorithm’s flexibility and generality, we conducted unique set of experiments under different circumstances that measured succes rate, number of user interactions/iterations, and devices needed for each algorithm. The evaluation process was carried out in the Unity game engine platform that exercised the characteristic “illumination”. There are a few assumptions that underlie the remaining discussions in this section. First, we assume a 3D space (a rectangular room of fixed dimensions, 25mX24mX10m), that is an inhabitant of a single user (avatar). Multiple Point lights (that casts light in all directions), and Light sensors (upon availability) were dispersed at random throughout the space. We further assumed that a localization system exists and provides continuous access to the location of the avatar, light devices, and sensors. Lastly, we presumed that the space also has knowledge of each device’s capacity. The evaluation conducted a considerable number of trials (>150), varying numbers of light fixture (4 to 6), and their capacity (ranging from- 1 to 8 candela, with two device settings- turning on/off). The target illumination level at the avatar’s location (which varied across the space) fluctuated from 400 to 450 lux with a threshold of 40 lux for each trial. For evaluation purposes, the space had access to ground truth value (a light sensor was placed above the avatar). 
 
 
+#Case 1. Only feedback, no sensors.
+
+To assess the impact of human feedback on the performance of three algorithms, we conducted a simulation comprising 172 experiments. Figure 5(a) displays the probability that each algorithm reached a solution in Y number of user interactions or less. Algorithm 1, which investigated a more extensive range of device configurations, had a higher success rate (172 out of 172, 100%) outperforming Algorithm 2 (144 out of 172, 83.72%) and Algorithm 3 (131 out of 172, 76.16%), which assessed a restricted set of configurations based on estimations. The results were significantly influenced by the search technique implemented by each algorithm. Linear search explores every device configuration in the list, while binary search eliminates half of the device configurations at each iteration. Hence, Algorithm 3 which exploited binary search conceded fewer user interactions (1.61 on average) than Algorithm 2 (2.93 on average) and Algorithm 1 (4.69 on average) which exploited linear search. Finally, we analyzed the number of devices required by each solution in Figure 5(b), where the X-axis representing the probability that the algorithms reached a solution with Y number of devices or fewer. The results revealed that Algorithm 1 required fewer devices (2.06 on average) than Algorithm 2 (2.72 on average) and Algorithm 3 (3.16 on average). Overall, this study provides valuable insights into the impact of human feedback on algorithm performance, highlighting the importance of search techniques and the number of configurations considered in achieving optimal results.
+
+**Figure 1:** Algorithm taxonomy based on the availability of resources.
+
+<table>
+  <tr>
+    <td>(a)	Density of Probability vs Number of User Interaction</td>
+    <td>(b) Density of Probability vs Number of Devices</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/HamimAdal/Simulation-Unity/blob/main/Figures_simulation/c1_cdf_steps.png" width=400 height=300></td>
+    <td><img src="https://github.com/HamimAdal/Simulation-Unity/blob/main/Figures_simulation/c1_cdf_devices.png" width=400 height=300></td>
+ 
+  </tr>
+</table>
 
 
 <table>
@@ -54,6 +71,7 @@ To evaluate the algorithm’s flexibility and generality, we conducted unique se
   </tr>
 </table>
 
+In this case, we employed "perfect" feedback to evaluate the performance of three algorithms. However, such a circumstance is rarely encountered in real-world situations. Human fallibility in the feedback mechanism can introduce deviations in the algorithms' ability to provide accurate results. Similarly, the accuracy of sensor readings can be influenced by external factors within the environment. Therefore, in the subsequent case, we introduced a simulated disruption in the estimated sensor readings to understand and acknowledge the limitations and challenges posed by real-world scenarios, emphasizing the need for further refinement and development of algorithms for reliable and accurate results.
 
 
 # Reference
