@@ -19,7 +19,7 @@ In the subsections that follow, we consider each of the six combinations above (
 |                                    | 3.| Feedback + Sensor + History                    |
 
 
-**4.1. Context 1. Meeting user requests without relying on history of user interactions.**
+# Context 1. Meeting user requests without relying on history of user interactions.
 
 In the absence of a history of user interactions, leveraging real-time user feedback and sensors emerges as a viable solution for optimizing adaptive smart spaces. A variety of alternative resources can be employed, such as IP cameras, and infrared cameras where high dynamic range technology [1], and thermal image technique [5-6] are exploited to serve as illumination and temperature sensors. However, the use of cameras poses privacy concerns, necessitating alternative methods. Deployment of occupancy detection sensors [7-10] is one good choice, however, these system modules are limited to providing uniform lighting or temperature, with no capacity for maintaining specific levels unless the space exploits the right sensors related to the characteristics being investigated. Although some studies have employed wireless sensing modules, the stipulation of one light sensor per luminaire [11] results in inefficiencies due to an excessive number of sensors, elevated power consumption, and high-cost maintenance. This research investigates how human feedback and sensors (with a limited number) can function independently or in conjunction to effectively satisfy user requirements while respecting the constraints of a space's resources.
 
@@ -128,6 +128,7 @@ The algorithms used in this case are designed to operate in two distinct phases.
 
 Now, if we compare the algorithms for this case (human feedback and sensors), with Case 1 (human feedback), we discover that the algorithms of this case significantly outperform Case 1's algorithms in terms of number of user interactions required (on average). While examining each algorithm individually, the results indicate that this case averaged 1.37 user engagements for Algorithm 1, which is less than the number of user interactions made by Algorithm 1 in Case 1 (4.69 on average). The same is true for other algorithms, where the number of user interactions carried out by Algorithm 2 (1.10 on average) and Algorithm 3 (1.07 on average) in this case is lower than the algorithms in Case 1 (2.93 and 1.67 on average, for Algorithm 2 and Algorithm 3, respectively). In relation to the quantity of devices utilized (Figure 8(b)), Algorithm 1 averaged 4.23 devices per trial, while Algorithm 2 and Algorithm 3 needed 2.73 and 3.42 devices (on average), respectively.     
 
+# Context 2. Meeting user requests relying on history of user interactions (Ongoing work)
 
 
 # Reference
