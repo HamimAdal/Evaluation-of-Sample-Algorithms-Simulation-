@@ -5,13 +5,13 @@ Solving this equation may be computationally expensive but it should be possible
 In this section, we seek to develop an understanding of how user feedback, availability of sensors, and historical data contribute to solving the equation above.  With this goal in mind, we seek to explore the domain of algorithmic solutions made possible by exploiting these different resources alone and in various combinations along the lines summarized in Table 1.
 
 | Context                            | Case              | Available Resources            |
-|------------------------------------|-------------------|--------------------------------|
+|------------------------------------|---|------------------------------------------------|
 | History data is not available      | 1.| Feedback                                       |
 |                                    | 2.| Sensor                                         |
-|                                    | 3.| Feedback + Sensor                               |
+|                                    | 3.| Feedback + Sensor                              |
 | History data is available          | 1.| Feedback + History                             |
 |                                    | 2.| Sensor + History                               |
-|                                    | 3.| Feedback + Sensor + History                     |
+|                                    | 3.| Feedback + Sensor + History                    |
 
 
 
