@@ -66,6 +66,27 @@ To assess the impact of human feedback on the performance of three algorithms, w
 
 In this case, we employed "perfect" feedback to evaluate the performance of three algorithms. However, such a circumstance is rarely encountered in real-world situations. Human fallibility in the feedback mechanism can introduce deviations in the algorithms' ability to provide accurate results. Similarly, the accuracy of sensor readings can be influenced by external factors within the environment. Therefore, in the subsequent case, we introduced a simulated disruption in the estimated sensor readings to understand and acknowledge the limitations and challenges posed by real-world scenarios, emphasizing the need for further refinement and development of algorithms for reliable and accurate results.
 
+#Case 2. Only sensor, no feedback.
+
+This case follows a further inspection of how well the space leverages sensors and what effects do the distribution of sensors have on the algorithm’s functionality. To make the problem more challenging, we do not assume the estimated sensor readings at the target location to be perfect. As a matter of fact, the precision of the projected sensor reading at the desired location is entirely dependent on the interpolation method (we used Inverse Distance Weighting Formula) employed to compute the level of illumination. 
+
+The first key study in this case was to find out whether the distribution of sensors in space has any effect on the performances of the algorithms. Table 2 compares and summarizes the success rates of the algorithms when the sensors are randomly distributed across the space and when they are systematically placed following a certain protocol. Our analysis revealed that distributing sensors in a particular order (such as virtual dotted regular polygons depicted in Figure 6(b), where red icons represent sensors attached to each vertex) tended to result in a higher success rate of providing solutions compared to random sensor placement.   
+
+| Sensor Distribution                         | Number of Experiments Conducted | Found Solution for Algorithm 1 | Found Solution for Algorithm 2 | Found Solution for Algorithm 3 |
+|---------------------------------------------|---------------------------------|--------------------------------|--------------------------------|--------------------------------|
+| Random in the space                         | 191                             | 140 (73.29%)                   | 113 (59.16%)                   | 107 (56.02%)                   |
+| Vertices of regular (virtual) polygons      | 187                             | 167 (89.30%)                   | 129 (68.98%)                   | 127 (67.91%)                   |
+
+
+<table>
+  <tr>
+    <td>Figure 1: Figure 6: Placement of sesnors in the space!</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/HamimAdal/Simulation-Unity/blob/main/Figures_simulation/algo_sensor.jpg" width=800 height=400></td>
+  </tr>
+</table>
+
 
 # Reference
 
