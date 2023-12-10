@@ -47,7 +47,8 @@ To evaluate the algorithm’s flexibility and generality, we conducted unique se
 
 To assess the impact of human feedback on the performance of three algorithms, we conducted a simulation comprising 172 experiments. Figure 5(a) displays the probability that each algorithm reached a solution in Y number of user interactions or less. Algorithm 1, which investigated a more extensive range of device configurations, had a higher success rate (172 out of 172, 100%) outperforming Algorithm 2 (144 out of 172, 83.72%) and Algorithm 3 (131 out of 172, 76.16%), which assessed a restricted set of configurations based on estimations. The results were significantly influenced by the search technique implemented by each algorithm. Linear search explores every device configuration in the list, while binary search eliminates half of the device configurations at each iteration. Hence, Algorithm 3 which exploited binary search conceded fewer user interactions (1.61 on average) than Algorithm 2 (2.93 on average) and Algorithm 1 (4.69 on average) which exploited linear search. Finally, we analyzed the number of devices required by each solution in Figure 5(b), where the X-axis representing the probability that the algorithms reached a solution with Y number of devices or fewer. The results revealed that Algorithm 1 required fewer devices (2.06 on average) than Algorithm 2 (2.72 on average) and Algorithm 3 (3.16 on average). Overall, this study provides valuable insights into the impact of human feedback on algorithm performance, highlighting the importance of search techniques and the number of configurations considered in achieving optimal results.
 
-**Figure 2:** Algorithm taxonomy based on the availability of resources.
+**Figure 2:** Performance evaluation of the algorithms in Case 1.
+
 
 <table>
   <tr>
