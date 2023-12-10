@@ -89,6 +89,21 @@ The first key study in this case was to find out whether the distribution of sen
 
 The next research study addresses how well the algorithms utilized sensor feedbacks to produce desired solution given that there is some disruption in the estimated sensor readings. In the simulation, a total of 187 experiments were run. Figure 7(a) portrays, Algorithm 1 emerged as the most successful with 167 solutions (89.30%) delivered, while Algorithm 2 and Algorithm 3 managed to provide 127 (67.91%) and 129 (68.98%) solutions, respectively. Because of lack of accuracy in sensor readings, the success rate of each algorithm in this case is lower than the algorithms in Case 1 that had perfect human feedback. The investigation also reveals- the more accurate the interpolation formula is in estimating the illumination level from the available sensors, the better the success rate is.
 
+**Figure 2:** Performance evaluation of the algorithms in Case 2.
+
+
+<table>
+  <tr>
+    <td>(a)	Density of Probability vs Number of User Interaction</td>
+    <td>(b) Density of Probability vs Number of Devices</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/HamimAdal/Simulation-Unity/blob/main/Figures_simulation/c2_cdf_steps.png" width=400 height=300></td>
+    <td><img src="https://github.com/HamimAdal/Simulation-Unity/blob/main/Figures_simulation/c2_cdf_devices.png" width=400 height=300></td>
+ 
+  </tr>
+</table>
+
 # Reference
 
 1. https://pysource.com/2019/06/05/control-webcam-with-servo-motor-and-raspberry-pi-opencv-with-python/
