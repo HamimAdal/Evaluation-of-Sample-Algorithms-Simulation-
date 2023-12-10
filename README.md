@@ -104,6 +104,32 @@ The next research study addresses how well the algorithms utilized sensor feedba
   </tr>
 </table>
 
+The final observation depicts the convergence rate of the algorithms in Figure 7(a) where Algorithm 3 demonstrated a considerably faster convergence rate, requiring fewer iterations (1.62 on average) to discover the ideal device configuration, compared to Algorithm 2 (2.88 on average) and Algorithm 1 (3.49 on average). Regarding the number of devices needed (Figure 7 (b)), Algorithm 2 required fewer devices (2.65 on average) than Algorithm 1 (4.46 on average) and Algorithm 3 (3.37 on average). In this case, where there was no choice for human response, the users needed to be contended with whatever solution the algorithms offered based on the projected sensor readings. The next case does an advanced investigation on how the space can capitalize on human feedback on top of sensor readings to improve the performance of the algorithms.
+
+#Case 3. Feedback and Sensor
+
+The algorithms used in this case are designed to operate in two distinct phases. In the first phase, sensor readings are utilized to predict a device configuration that is close to an ideal solution. The second phase involves withholding the selection of the final device configuration until the user approves it. If the user rejects the proposed configuration, the algorithms restart phase 1 and search for an alternative device configuration. This process iterates until all possible configurations have been examined, or the user consents to a proposed solution. This iterative approach provides a practical and effective method for achieving an optimal configuration for a device while ensuring user satisfaction. Running the algorithms in the Unity Simulation for this case produced results that showed notable performance variations. We begin with analyzing the success rates of the algorithms. In the simulation, a total of 194 experiments were run. Figure 8 portrays that Algorithm 1 delivered the most number of solutions (183 out of 194, 94.32%) compared to Algorithm 2 (148 out of 194, 76.28%) and Algorithm 3 (139 out of 194, 71.64%). 
+
+
+**Figure 2:** Performance evaluation of the algorithms in Case 2.
+
+<table>
+  <tr>
+    <td>(a)	Density of Probability vs Number of User Interaction</td>
+    <td>(b) Density of Probability vs Number of Devices</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/HamimAdal/Simulation-Unity/blob/main/Figures_simulation/c3_cdf_steps.png" width=400 height=300></td>
+    <td><img src="https://github.com/HamimAdal/Simulation-Unity/blob/main/Figures_simulation/c3_cdf_devices.png" width=400 height=300></td>
+ 
+  </tr>
+</table>
+
+
+Now, if we compare the algorithms for this case (human feedback and sensors), with Case 1 (human feedback), we discover that the algorithms of this case significantly outperform Case 1's algorithms in terms of number of user interactions required (on average). While examining each algorithm individually, the results indicate that this case averaged 1.37 user engagements for Algorithm 1, which is less than the number of user interactions made by Algorithm 1 in Case 1 (4.69 on average). The same is true for other algorithms, where the number of user interactions carried out by Algorithm 2 (1.10 on average) and Algorithm 3 (1.07 on average) in this case is lower than the algorithms in Case 1 (2.93 and 1.67 on average, for Algorithm 2 and Algorithm 3, respectively). In relation to the quantity of devices utilized (Figure 8(b)), Algorithm 1 averaged 4.23 devices per trial, while Algorithm 2 and Algorithm 3 needed 2.73 and 3.42 devices (on average), respectively.     
+
+
+
 # Reference
 
 1. https://pysource.com/2019/06/05/control-webcam-with-servo-motor-and-raspberry-pi-opencv-with-python/
