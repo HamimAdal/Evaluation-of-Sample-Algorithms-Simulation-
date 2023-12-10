@@ -11,10 +11,10 @@ In the subsections that follow, we consider each of the six combinations above (
 
 | Context                            | Case              | Available Resources            |
 |------------------------------------|---|------------------------------------------------|
-| 1. History data is not available      | 1.| Feedback                                       |
+| 1. History data is not available   | 1.| Feedback                                       |
 |                                    | 2.| Sensor                                         |
 |                                    | 3.| Feedback + Sensor                              |
-| 2. History data is available          | 1.| Feedback + History                             |
+| 2. History data is available       | 1.| Feedback + History                             |
 |                                    | 2.| Sensor + History                               |
 |                                    | 3.| Feedback + Sensor + History                    |
 
@@ -45,7 +45,7 @@ To evaluate the algorithm’s flexibility and generality, we conducted unique se
 
 # Case 1. Only feedback, no sensors.
 
-To assess the impact of human feedback on the performance of three algorithms, we conducted a simulation comprising 172 experiments. Figure 5(a) displays the probability that each algorithm reached a solution in Y number of user interactions or less. Algorithm 1, which investigated a more extensive range of device configurations, had a higher success rate (172 out of 172, 100%) outperforming Algorithm 2 (144 out of 172, 83.72%) and Algorithm 3 (131 out of 172, 76.16%), which assessed a restricted set of configurations based on estimations. The results were significantly influenced by the search technique implemented by each algorithm. Linear search explores every device configuration in the list, while binary search eliminates half of the device configurations at each iteration. Hence, Algorithm 3 which exploited binary search conceded fewer user interactions (1.61 on average) than Algorithm 2 (2.93 on average) and Algorithm 1 (4.69 on average) which exploited linear search. Finally, we analyzed the number of devices required by each solution in Figure 5(b), where the X-axis representing the probability that the algorithms reached a solution with Y number of devices or fewer. The results revealed that Algorithm 1 required fewer devices (2.06 on average) than Algorithm 2 (2.72 on average) and Algorithm 3 (3.16 on average). Overall, this study provides valuable insights into the impact of human feedback on algorithm performance, highlighting the importance of search techniques and the number of configurations considered in achieving optimal results.
+To assess the impact of human feedback on the performance of three algorithms, we conducted a simulation comprising 172 experiments. Figure 2(a) displays the probability that each algorithm reached a solution in Y number of user interactions or less. Algorithm 1, which investigated a more extensive range of device configurations, had a higher success rate (172 out of 172, 100%) outperforming Algorithm 2 (144 out of 172, 83.72%) and Algorithm 3 (131 out of 172, 76.16%), which assessed a restricted set of configurations based on estimations. The results were significantly influenced by the search technique implemented by each algorithm. Linear search explores every device configuration in the list, while binary search eliminates half of the device configurations at each iteration. Hence, Algorithm 3 which exploited binary search conceded fewer user interactions (1.61 on average) than Algorithm 2 (2.93 on average) and Algorithm 1 (4.69 on average) which exploited linear search. Finally, we analyzed the number of devices required by each solution in Figure 2(b), where the X-axis representing the probability that the algorithms reached a solution with Y number of devices or fewer. The results revealed that Algorithm 1 required fewer devices (2.06 on average) than Algorithm 2 (2.72 on average) and Algorithm 3 (3.16 on average). Overall, this study provides valuable insights into the impact of human feedback on algorithm performance, highlighting the importance of search techniques and the number of configurations considered in achieving optimal results.
 
 **Figure 2:** Performance evaluation of the algorithms in Case 1.
 
@@ -70,7 +70,10 @@ In this case, we employed "perfect" feedback to evaluate the performance of thre
 
 This case follows a further inspection of how well the space leverages sensors and what effects do the distribution of sensors have on the algorithm’s functionality. To make the problem more challenging, we do not assume the estimated sensor readings at the target location to be perfect. As a matter of fact, the precision of the projected sensor reading at the desired location is entirely dependent on the interpolation method (we used Inverse Distance Weighting Formula) employed to compute the level of illumination. 
 
-The first key study in this case was to find out whether the distribution of sensors in space has any effect on the performances of the algorithms. Table 2 compares and summarizes the success rates of the algorithms when the sensors are randomly distributed across the space and when they are systematically placed following a certain protocol. Our analysis revealed that distributing sensors in a particular order (such as virtual dotted regular polygons depicted in Figure 6(b), where red icons represent sensors attached to each vertex) tended to result in a higher success rate of providing solutions compared to random sensor placement.   
+The first key study in this case was to find out whether the distribution of sensors in space has any effect on the performances of the algorithms. Table 2 compares and summarizes the success rates of the algorithms when the sensors are randomly distributed across the space and when they are systematically placed following a certain protocol. Our analysis revealed that distributing sensors in a particular order (such as virtual dotted regular polygons depicted in Figure 3(b), where red icons represent sensors attached to each vertex) tended to result in a higher success rate of providing solutions compared to random sensor placement.   
+
+**Table 2:** Performance difference of the algorithms based on the distribution of sensors in the Space.
+
 
 | Sensor Distribution                         | Number of Experiments Conducted | Found Solution for Algorithm 1 | Found Solution for Algorithm 2 | Found Solution for Algorithm 3 |
 |---------------------------------------------|---------------------------------|--------------------------------|--------------------------------|--------------------------------|
@@ -80,16 +83,16 @@ The first key study in this case was to find out whether the distribution of sen
 
 <table>
   <tr>
-    <td>Figure 1: Figure 6: Placement of sesnors in the space!</td>
+    <td>Figure 3: Placement of sesnors in the space!</td>
   </tr>
   <tr>
     <td><img src="https://github.com/HamimAdal/Simulation-Unity/blob/main/Figures_simulation/algo_sensor.jpg" width=800 height=400></td>
   </tr>
 </table>
 
-The next research study addresses how well the algorithms utilized sensor feedbacks to produce desired solution given that there is some disruption in the estimated sensor readings. In the simulation, a total of 187 experiments were run. Figure 7(a) portrays, Algorithm 1 emerged as the most successful with 167 solutions (89.30%) delivered, while Algorithm 2 and Algorithm 3 managed to provide 127 (67.91%) and 129 (68.98%) solutions, respectively. Because of lack of accuracy in sensor readings, the success rate of each algorithm in this case is lower than the algorithms in Case 1 that had perfect human feedback. The investigation also reveals- the more accurate the interpolation formula is in estimating the illumination level from the available sensors, the better the success rate is.
+The next research study addresses how well the algorithms utilized sensor feedbacks to produce desired solution given that there is some disruption in the estimated sensor readings. In the simulation, a total of 187 experiments were run. Figure 4(a) portrays, Algorithm 1 emerged as the most successful with 167 solutions (89.30%) delivered, while Algorithm 2 and Algorithm 3 managed to provide 127 (67.91%) and 129 (68.98%) solutions, respectively. Because of lack of accuracy in sensor readings, the success rate of each algorithm in this case is lower than the algorithms in Case 1 that had perfect human feedback. The investigation also reveals- the more accurate the interpolation formula is in estimating the illumination level from the available sensors, the better the success rate is.
 
-**Figure 2:** Performance evaluation of the algorithms in Case 2.
+**Figure 4:** Performance evaluation of the algorithms in Case 2.
 
 
 <table>
@@ -104,14 +107,16 @@ The next research study addresses how well the algorithms utilized sensor feedba
   </tr>
 </table>
 
-The final observation depicts the convergence rate of the algorithms in Figure 7(a) where Algorithm 3 demonstrated a considerably faster convergence rate, requiring fewer iterations (1.62 on average) to discover the ideal device configuration, compared to Algorithm 2 (2.88 on average) and Algorithm 1 (3.49 on average). Regarding the number of devices needed (Figure 7 (b)), Algorithm 2 required fewer devices (2.65 on average) than Algorithm 1 (4.46 on average) and Algorithm 3 (3.37 on average). In this case, where there was no choice for human response, the users needed to be contended with whatever solution the algorithms offered based on the projected sensor readings. The next case does an advanced investigation on how the space can capitalize on human feedback on top of sensor readings to improve the performance of the algorithms.
+The final observation depicts the convergence rate of the algorithms in Figure 4(a) where Algorithm 3 demonstrated a considerably faster convergence rate, requiring fewer iterations (1.62 on average) to discover the ideal device configuration, compared to Algorithm 2 (2.88 on average) and Algorithm 1 (3.49 on average). Regarding the number of devices needed (Figure 4 (b)), Algorithm 2 required fewer devices (2.65 on average) than Algorithm 1 (4.46 on average) and Algorithm 3 (3.37 on average). In this case, where there was no choice for human response, the users needed to be contended with whatever solution the algorithms offered based on the projected sensor readings. The next case does an advanced investigation on how the space can capitalize on human feedback on top of sensor readings to improve the performance of the algorithms.
 
 # Case 3. Feedback and Sensor
 
-The algorithms used in this case are designed to operate in two distinct phases. In the first phase, sensor readings are utilized to predict a device configuration that is close to an ideal solution. The second phase involves withholding the selection of the final device configuration until the user approves it. If the user rejects the proposed configuration, the algorithms restart phase 1 and search for an alternative device configuration. This process iterates until all possible configurations have been examined, or the user consents to a proposed solution. This iterative approach provides a practical and effective method for achieving an optimal configuration for a device while ensuring user satisfaction. Running the algorithms in the Unity Simulation for this case produced results that showed notable performance variations. We begin with analyzing the success rates of the algorithms. In the simulation, a total of 194 experiments were run. Figure 8 portrays that Algorithm 1 delivered the most number of solutions (183 out of 194, 94.32%) compared to Algorithm 2 (148 out of 194, 76.28%) and Algorithm 3 (139 out of 194, 71.64%). 
+The algorithms used in this case are designed to operate in two distinct phases. In the first phase, sensor readings are utilized to predict a device configuration that is close to an ideal solution. The second phase involves withholding the selection of the final device configuration until the user approves it. If the user rejects the proposed configuration, the algorithms restart phase 1 and search for an alternative device configuration. This process iterates until all possible configurations have been examined, or the user consents to a proposed solution. This iterative approach provides a practical and effective method for achieving an optimal configuration for a device while ensuring user satisfaction. 
+
+Running the algorithms in the Unity Simulation for this case produced results that showed notable performance variations. We begin with analyzing the success rates of the algorithms. In the simulation, a total of 194 experiments were run. Figure 5 portrays that Algorithm 1 delivered the most number of solutions (183 out of 194, 94.32%) compared to Algorithm 2 (148 out of 194, 76.28%) and Algorithm 3 (139 out of 194, 71.64%). 
 
 
-**Figure 2:** Performance evaluation of the algorithms in Case 2.
+**Figure 5:** Performance evaluation of the algorithms in Case 2.
 
 <table>
   <tr>
@@ -126,7 +131,7 @@ The algorithms used in this case are designed to operate in two distinct phases.
 </table>
 
 
-Now, if we compare the algorithms for this case (human feedback and sensors), with Case 1 (human feedback), we discover that the algorithms of this case significantly outperform Case 1's algorithms in terms of number of user interactions required (on average). While examining each algorithm individually, the results indicate that this case averaged 1.37 user engagements for Algorithm 1, which is less than the number of user interactions made by Algorithm 1 in Case 1 (4.69 on average). The same is true for other algorithms, where the number of user interactions carried out by Algorithm 2 (1.10 on average) and Algorithm 3 (1.07 on average) in this case is lower than the algorithms in Case 1 (2.93 and 1.67 on average, for Algorithm 2 and Algorithm 3, respectively). In relation to the quantity of devices utilized (Figure 8(b)), Algorithm 1 averaged 4.23 devices per trial, while Algorithm 2 and Algorithm 3 needed 2.73 and 3.42 devices (on average), respectively.     
+Now, if we compare the algorithms for this case (human feedback and sensors), with Case 1 (human feedback), we discover that the algorithms of this case significantly outperform Case 1's algorithms in terms of number of user interactions required (on average). While examining each algorithm individually, the results indicate that this case averaged 1.37 user engagements for Algorithm 1, which is less than the number of user interactions made by Algorithm 1 in Case 1 (4.69 on average). The same is true for other algorithms, where the number of user interactions carried out by Algorithm 2 (1.10 on average) and Algorithm 3 (1.07 on average) in this case is lower than the algorithms in Case 1 (2.93 and 1.67 on average, for Algorithm 2 and Algorithm 3, respectively). In relation to the quantity of devices utilized (Figure 5(b)), Algorithm 1 averaged 4.23 devices per trial, while Algorithm 2 and Algorithm 3 needed 2.73 and 3.42 devices (on average), respectively.     
 
 # Context 2. Meeting user requests relying on history of user interactions (Ongoing work)
 
