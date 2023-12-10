@@ -11,10 +11,10 @@ In the subsections that follow, we consider each of the six combinations above (
 
 | Context                            | Case              | Available Resources            |
 |------------------------------------|---|------------------------------------------------|
-| History data is not available      | 1.| Feedback                                       |
+| 1. History data is not available      | 1.| Feedback                                       |
 |                                    | 2.| Sensor                                         |
 |                                    | 3.| Feedback + Sensor                              |
-| History data is available          | 1.| Feedback + History                             |
+| 2. History data is available          | 1.| Feedback + History                             |
 |                                    | 2.| Sensor + History                               |
 |                                    | 3.| Feedback + Sensor + History                    |
 
