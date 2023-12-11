@@ -1,5 +1,5 @@
 
-# Simulation platform (UNity Game Engine) to Evaluate Sample Algorithms.
+# Simulation platform (Unity Game Engine) to Evaluate Sample Algorithms.
 
 **Working Environment.**
 
