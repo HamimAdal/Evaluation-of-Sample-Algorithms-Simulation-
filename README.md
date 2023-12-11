@@ -3,11 +3,11 @@
 
 **Working Platform.**
 
--- Simulation Software: Unity Game Engine
+-- **Simulation Software**: Unity Game Engine
 
--- Programming: C#, Python
+-- **Programming**: C#, Python
 
--- Libraries: pandas, matplotlib, NumPy
+-- **Libraries**: pandas, matplotlib, NumPy
 
 **Getting Started.**
 
