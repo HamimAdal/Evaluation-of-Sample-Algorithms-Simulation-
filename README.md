@@ -1,7 +1,7 @@
 
 # Evaluation of Sample Algorithms in Unity Game Engine.
 
-** Working Platform.**
+**Working Platform.**
 
 -- Simulation Software: Unity Game Engine
 
