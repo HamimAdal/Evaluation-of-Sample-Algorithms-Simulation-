@@ -131,7 +131,7 @@ The algorithms used in this case are designed to operate in two distinct phases.
 Running the algorithms in the Unity Simulation for this case produced results that showed notable performance variations. We begin with analyzing the success rates of the algorithms. In the simulation, a total of 194 experiments were run. Figure 5 portrays that Algorithm 1 delivered the most number of solutions (183 out of 194, 94.32%) compared to Algorithm 2 (148 out of 194, 76.28%) and Algorithm 3 (139 out of 194, 71.64%). 
 
 
-**Figure 5:** Performance evaluation of the algorithms in Case 2.
+**Figure 5:** Performance evaluation of the algorithms in Case 3.
 
 <table>
   <tr>
