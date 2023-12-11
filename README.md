@@ -163,8 +163,7 @@ Now, if we compare the algorithms for this case (human feedback and sensors), wi
 7.	V.L. Erickson, A.E. Cerpa, Occupancy based demand response HVAC control strategy, in: Proceedings of the Second ACM Workshop on Embedded Sensing Systems for Energy-efficiency in Buildings, ACM, Zürich, 2010, pp. 7–12.
 8.  https://www.geeksforgeeks.org/linear-search/
 9.	https://www.geeksforgeeks.org/binary-search/
-10.	Aussat, Yerbol, Ansis Rosmanis, and Srinivasan Keshav. "A power-efficient self-calibrating smart lighting system." Energy and Buildings 259 (2022): 111874.![image](https://github.com/HamimAdal/Simulation-Unity/assets/32908045/b4d4e5f6-8992-42bf-90cf-22e1dd08af34)
-
+10.	Aussat, Yerbol, Ansis Rosmanis, and Srinivasan Keshav. "A power-efficient self-calibrating smart lighting system." Energy and Buildings 259 (2022): 111874.
 
 
 
